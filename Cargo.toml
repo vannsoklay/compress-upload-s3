@@ -1,0 +1,13 @@
+[package]
+name = "upload-s3"
+version = "0.1.0"
+edition = "2021"
+
+[dependencies]
+tokio = { version = "*", features = ["full"] }
+aws-sdk-s3 = { version = "*", features = ["rt-tokio"] }
+aws-config = "1.5.6"
+futures = "*"
+dotenv = "*"
+image = "*"
+mime_guess = "*"
